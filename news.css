@@ -1,0 +1,194 @@
+body {
+    background-color: #f0f8f0;
+}
+
+.school-header {
+    background-color: #e7f5ef; 
+    padding: 20px 0;
+    border-bottom: 2px solid #25bb52;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.school-header .container{
+    background-color: #25bb52;
+}
+
+.school-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.school-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.school-motto {
+    font-size: 1rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .school-header {
+        padding: 15px 0; /* Reduce padding on smaller screens */
+        text-align: center; /* Center align content */
+    }
+
+    .school-name {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .school-motto {
+        font-size: 0.9rem; /* Reduce motto font size for smaller screens */
+        margin-top: 5px; /* Add some space above the motto */
+    }
+
+    .row.align-items-center {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items vertically */
+    }
+}
+
+.navbar {
+    margin-top: 120px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #25bb52 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #25bb52 !important;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #25bb52;
+    border-color: #25bb52;
+    transition: all 0.3s ease;
+}
+.btn-primary a {
+   text-decoration: none;
+   color: #fff;
+    
+}
+
+.btn-primary:hover {
+    background-color: #59d67e;
+    border-color: #59d67e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .btn-primary {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+
+.blog-section {
+    padding: 50px 0;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+}
+
+.blog-grid {
+    margin-top: 20px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.post-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.post-content img {
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #2e934c;
+    color: white;
+    padding: 40px 0;
+}
+.footer .container .row {
+    background-color: #2e934c;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #d1e8d1;
+}
+
+.footer-line {
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+
+.company-name {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.section .bg-light{
+    height: 25px;
+}

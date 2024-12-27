@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Bilingual School Admission Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .school-header {
+    background-color: #e7f5ef; 
+    padding: 20px 0;
+    border-bottom: 2px solid #25bb52;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin-top: -50px;
+}
+.school-header .container{
+    background-color: #25bb52;
+}
+
+.school-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.school-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.school-motto {
+    font-size: 1rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .school-header {
+        padding: 15px 0; /* Reduce padding on smaller screens */
+        text-align: center; /* Center align content */
+    }
+
+    .school-name {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .school-motto {
+        font-size: 0.9rem; /* Reduce motto font size for smaller screens */
+        margin-top: 5px; /* Add some space above the motto */
+    }
+
+    .row.align-items-center {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items vertically */
+    }
+}
+
+.navbar {
+    margin-top: 60px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #25bb52 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #25bb52 !important;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #25bb52;
+    border-color: #25bb52;
+    transition: all 0.3s ease;
+}
+.btn-primary a {
+   text-decoration: none;
+   color: #fff;
+    
+}
+
+.btn-primary:hover {
+    background-color: #59d67e;
+    border-color: #59d67e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .btn-primary {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            
+        }
+        .container .mt-5{
+            margin-top: 50px;
+            padding-top: 25px;
+        }
+        h3 {
+            color: #25bb52;
+            border-bottom: 2px solid #25bb52;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+    margin-top: 20px;
+    background-color: #2e934c;
+    color: white;
+    padding: 40px 0;
+}
+.footer .container .row {
+    background-color: #2e934c;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #d1e8d1;
+}
+
+.footer-line {
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+
+.company-name {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+.section .bg-light{
+    height: 25px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="school-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="/images/logo.png" alt="School Logo" class="school-logo">
+                </div>
+                <div class="col-md-10">
+                    <h1 class="school-name">PRESTIGE BILINGUAL NURSERY AND PRIMARY SCHOOL</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academic.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            
+            <button class="btn btn-primary" type="button"><a href="#contactus">Contact Us</a></button>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 form-container">
+                <h2 class="text-center mb-4">Prestige Bilingual School Admission Form</h2>
+                <form>
+                    <h3>A. Pupil's Personal Details</h3>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="pupilName" class="form-label">Pupil's Name</label>
+                            <input type="text" class="form-control" id="pupilName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" id="gender" required>
+                                <option value="">Choose...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="pob" class="form-label">Place of Birth</label>
+                            <input type="text" class="form-control" id="pob" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="currentResidence" class="form-label">Current Residence</label>
+                            <input type="text" class="form-control" id="currentResidence" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="nationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control" id="nationality" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="regionOrigin" class="form-label">Region of Origin</label>
+                            <input type="text" class="form-control" id="regionOrigin" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="previousClass" class="form-label">Previous Class</label>
+                            <input type="text" class="form-control" id="previousClass" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="classFor2024" class="form-label">Class for 2024/2025 Academic Year</label>
+                            <input type="text" class="form-control" id="classFor2024" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="formerSchool" class="form-label">Former School</label>
+                            <input type="text" class="form-control" id="formerSchool" required>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">B. Parent/Guardian Information</h3>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="parentName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="parentName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="parentAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="parentAddress" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="parentOccupation" class="form-label">Occupation</label>
+                            <input type="text" class="form-control" id="parentOccupation" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="nicNumber" class="form-label">NIC Number</label>
+                            <input type="text" class="form-control" id="nicNumber" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="nicIssuedAt" class="form-label">Issued At</label>
+                            <input type="text" class="form-control" id="nicIssuedAt" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="nicIssuedOn" class="form-label">Issued On</label>
+                            <input type="date" class="form-control" id="nicIssuedOn" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="parentNationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control" id="parentNationality" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="parentRegionOrigin" class="form-label">Region of Origin</label>
+                            <input type="text" class="form-control" id="parentRegionOrigin" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="parentTelephone" class="form-label">Telephone</label>
+                            <input type="tel" class="form-control" id="parentTelephone" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="parentEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="parentEmail" required>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">C. Child Pick-up Information</h3>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstAuthorized" class="form-label">First Authorized Person</label>
+                            <input type="text" class="form-control" id="firstAuthorized" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="firstAuthorizedNIC" class="form-label">NIC Number</label>
+                            <input type="text" class="form-control" id="firstAuthorizedNIC" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstAuthorizedTel" class="form-label">Telephone</label>
+                            <input type="tel" class="form-control" id="firstAuthorizedTel" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="firstAuthorizedEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="firstAuthorizedEmail" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="secondAuthorized" class="form-label">Second Authorized Person</label>
+                            <input type="text" class="form-control" id="secondAuthorized" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="secondAuthorizedNIC" class="form-label">NIC Number</label>
+                            <input type="text" class="form-control" id="secondAuthorizedNIC" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="secondAuthorizedTel" class="form-label">Telephone</label>
+                            <input type="tel" class="form-control" id="secondAuthorizedTel" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="secondAuthorizedEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="secondAuthorizedEmail" required>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">D. Health and Special Needs Information</h3>
+                    <div class="mb-3">
+                        <label class="form-label">Does your child have health issues?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="healthIssues" id="healthIssuesYes" value="yes">
+                            <label class="form-check-label" for="healthIssuesYes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="healthIssues" id="healthIssuesNo" value="no">
+                            <label class="form-check-label" for="healthIssuesNo">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="healthIssuesSpecify" class="form-label">If yes, please specify:</label>
+                        <textarea class="form-control" id="healthIssuesSpecify" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Does your child have an allergy?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allergy" id="allergyYes" value="yes">
+                            <label class="form-check-label" for="allergyYes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allergy" id="allergyNo" value="no">
+                            <label class="form-check-label" for="allergyNo">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="allergySpecify" class="form-label">If yes, please specify:</label>
+                        <textarea class="form-control" id="allergySpecify" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Does your child have special needs?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="specialNeeds" id="specialNeedsYes" value="yes">
+                            <label class="form-check-label" for="specialNeedsYes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="specialNeeds" id="specialNeedsNo" value="no">
+                            <label class="form-check-label" for="specialNeedsNo">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="specialNeedsSpecify" class="form-label">If yes, please specify:</label>
+                        <textarea class="form-control" id="specialNeedsSpecify" rows="3"></textarea>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="foot">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Home</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>About</h5>
+                    <p>Prestige bilingual nursery and primary school  is dedicated to providing quality education and fostering a nurturing environment for students to thrive.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Academic Programs</a></li>
+                        <li><a href="#">Tuition Fees</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Email: prestigebilingual@gmail.com</p>
+                    <p>Phone: (+237) 652400068</p>
+                    <p>Address: Bwitingi,Molyko New layout</p>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="company-name">
+                <p>&copy; Website Designed By SinoTech Ltd.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

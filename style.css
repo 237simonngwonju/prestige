@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+.school-header {
+    background-color: #e7f5ef; 
+    padding: 20px 0;
+    border-bottom: 2px solid #25bb52;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.school-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.school-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.school-motto {
+    font-size: 1rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .school-header {
+        padding: 15px 0; /* Reduce padding on smaller screens */
+        text-align: center; /* Center align content */
+    }
+
+    .school-name {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .school-motto {
+        font-size: 0.9rem; /* Reduce motto font size for smaller screens */
+        margin-top: 5px; /* Add some space above the motto */
+    }
+
+    .row.align-items-center {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items vertically */
+    }
+}
+
+.navbar {
+    margin-top: 120px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #25bb52 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #25bb52 !important;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #25bb52;
+    border-color: #25bb52;
+    transition: all 0.3s ease;
+}
+.btn-primary a {
+   text-decoration: none;
+   color: #fff;
+    
+}
+
+.btn-primary:hover {
+    background-color: #59d67e;
+    border-color: #59d67e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .btn-primary {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/*Hero section start here*/
+.hero-section {
+    background-image: url(/images/bg1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 7.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero-title p .lead {
+    color: #1e9e44;
+}
+
+.info-section {
+    margin-top: -100px;
+    position: relative;
+    z-index: 3;
+}
+
+.info-card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.info-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-card .card-body {
+    padding: 1.5rem;
+}
+
+.btn-custom {
+    background-color: #25bb52;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #1e9e44;
+    color: #ffffff;
+}
+/*Hero section ends here*/
+/*About section styling*/
+.about-section {
+    padding: 80px 0;
+
+}
+
+.about-heading {
+    color: #25bb52;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-subheading {
+    color: rgb(168, 245, 3);
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.row{
+    background-color:#25bb52 ;
+    color: white;
+}
+
+.about-text {
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+}
+.about-text.mb-5 {
+    color: #25bb52;
+    line-height: 1.8;
+}
+
+.about-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-card-icon {
+    font-size: 2.5rem;
+    color: #25bb52;
+    margin-bottom: 20px;
+}
+
+.about-card-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-card-text {
+    color: #555;
+}
+/*Aboutsection styling ends here*/
+/*out team section styling ends here*/
+.team-section {
+    padding: 40px 0;
+}
+
+.section-heading {
+    color: #25bb52;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.teacher-card {
+    background-color: #ebfae9;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.teacher-card:hover {
+     transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.col-lg-3{
+    margin-top: 20px;
+}
+
+.teacher-image {
+    width: 120px; /* Set width for circular image */
+    height: 120px; /* Set height for circular image */
+    object-fit: cover;
+    border-radius: 50%; /* Circular shape */
+    border: 3px solid #25bb52; /* Green border */
+    margin-bottom: 15px;
+}
+
+.teacher-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.teacher-subject {
+    color: #25bb52;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.teacher-description {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #25bb52;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1e9e44;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .teacher-name {
+        font-size: 1.3rem;
+    }
+    .teacher-subject {
+        font-size: 1rem;
+    }
+    .teacher-description {
+        font-size: 0.85rem;
+    }
+}
+/*Our team section styling ends here*/
+/*Our student life section styling starts here*/
+.student-life-section {
+    padding: 80px 0;
+}
+
+.section-heading {
+    color: #25bb52;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.activity-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.activity-image-container {
+    overflow: hidden;
+}
+
+.activity-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover .activity-image {
+    transform: scale(1.1);
+}
+
+.activity-description {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.slider-section {
+    margin-top: 50px;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .activity-description {
+        font-size: 0.9rem;
+    }
+}
+/*Our student life section styling ends here*/
+.admission-section {
+    padding: 80px 0;
+}
+.mb-4 {
+    margin-top: 18px;
+}
+
+.section-heading {
+    color: #25bb52;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sub-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.method-heading {
+    color: #25bb52;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.steps-list {
+    list-style-type: none;
+    padding-left: 0;
+ 
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.steps-list li:before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #25bb52;
+    position: absolute;
+    left: 0;
+}
+
+.method-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    height: 100%;
+    color:  #333;
+}
+
+.online-application {
+    background-color: #e9f9ef;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.online-application a {
+    color: #25bb52;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.online-application a:hover {
+    color: #1e9e44;
+}
+.online-application .btn{
+    background-color: #ffffff;
+}
+/* Admission section ends here*/
+/*contact section starts here*/
+.bg-light{
+    background-color: #fff;
+}
+
+.contact-form .form-control {
+    margin-bottom: 20px;
+}
+.contact-form .btn{
+    background-color: #fff;
+    color: #1e9e44;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 15px;
+}
+.container-box .method-heading{
+    color: #fff;
+}
+/*contact section ends here*/
+/*footer section starts here*/
+.footer {
+    margin-top: 20px;
+    background-color: #2e934c;
+    color: white;
+    padding: 40px 0;
+}
+.footer .container .row {
+    background-color: #2e934c;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #d1e8d1;
+}
+
+.footer-line {
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+
+.company-name {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.section .bg-light{
+    height: 25px;
+}
+/*footer section ends here*/
